@@ -1,0 +1,42 @@
+#Practica No 4 LAB 111
+#Nombre: Claudio Andres Sanjines Cuellar
+#Paralelo: "F"
+#Fecha: 28/Sep/2020
+
+#Ejercicio 1
+
+a = int(input("Precio de la tarjeta: "))
+b = int(input("Carga de tarjeta: "))
+z = (a - b)
+print("Monto a recuperar: ",z)
+
+x = float(input("Ingrese el precio del pasaje sin tarjeta: "))
+print("Gasto sin tarjeta por dia: ",(x*2))
+semanax = (x * 2) * 5
+print("Gasto en bus sin tarjeta por semana: ",semanax)
+
+y = float(input("Ingrese el precio del pasaje con tarjeta: "))
+print("Gasto con tarjeta por dia: ",(y*2))
+semanay = (y * 2) * 5
+print("Gasto en bus con tarjeta por semana: ",semanay)
+
+n = int(input("casos de prueba del problema: "))
+while n > 0:
+    c = semanay * 2
+    while c < z:
+        c = c * 2
+        i = 1
+        i = i + 1
+        print("se recupera en", i, "semanas")
+    else: 
+        print("NO SE RECUPERA")
+
+#Ejercicio 2
+
+n = int(input("Ingrese un numero: "))
+def factorial(n):
+    if (n==0):
+        return 1
+    else:
+        return n * factorial(n-1)
+print("El factorial de: " + str(n) + ": es: " + str(factorial(n)))
